@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Permanent+Marker&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: 'Fredericka the Great', cursive;
+    color: #FFFFFF;
+    background-image: url("../images/chalkboard.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+section {
+    text-align: center;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+}
+
+.cell {
+    font-family: 'Permanent Marker', cursive;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    line-height: 10rem;
+    font-size: 4rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .game-container {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .cell {
+        width: 6rem;
+        height: 6rem;
+        line-height: 6rem;
+        font-size: 3rem;
+    }
+} 
